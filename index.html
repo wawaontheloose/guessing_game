@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/my-styles.css" rel="stylesheet" media="screen">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -16,8 +17,8 @@
     <!--Navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <a class="main-logo pull-left" href="#">Nugget, Inc.</a>
-        <p class="navbar-text pull-right hidden-xs">A Nugget Project</p>
+        <a class="main-logo pull-left" href="#">Nuggs</a>
+        <p class="navbar-text navbar-right hidden-xs" style = "margin-top: 20px">A Nugget Project</p>
       </div>
     </div><!-- End navbar -->
 
@@ -47,13 +48,16 @@
             <form class="form-horizontal">
               <p><strong>Enter how many nuggets you think is in the nugget box. (Hint: the box only holds 100 nuggets)</strong></p>
               <label class="sr-only">Your Guess</label>
-              <input class="form-horizontal" type="text" placeholder="# of Nuggets">
-              <button class="btn btn-submit" type="submit">Submit</button>
+              <input id= "guess" class="form-horizontal" type="text" placeholder="# of Nuggets">
+              <p class="count" id="countGuess"></p>
+              <h4 id='status'></h4>
+             
+              <button id = "submit1" class="btn btn-submit" type="submit">Submit</button>
             </form>
           </div>
-          <div class="col-sm-5">
-            <p><strong>Need a hint?</strong></p>
-            <a class="btn btn-default btn-lg" href="#">Need a hint?</a>
+          <div class="col-sm-2">
+            <p class="text-center"><strong>Play Again!</strong></p>
+            <button id = "resetbtn" class="btn btn-submit center-block" type="submit">Reset</button>
           </div>
         </div>
       </div> <!-- End panel -->
@@ -61,6 +65,7 @@
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/my.js"></script>
   </body>
 </html>
 
