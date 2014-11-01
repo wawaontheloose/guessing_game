@@ -1,6 +1,6 @@
 var guessArray = [];
 
-var maxGuesses = 5;
+var maxGuesses = 10;
 
 var answer = Math.floor((Math.random() * 100) + 1);
 
@@ -26,8 +26,8 @@ $("#submit1").on("click", function(event){
 
 	if (guessArray.length < maxGuesses){
 		if (answer == tempGuess){
-
 			$("#status").text("Congrats you win! You guessed right!!!"); 
+			$('#box').toggleClass('correct');
 		}
 		else if (answer - tempGuess < 0){
 			$("#countGuess").text(maxGuesses - guessArray.length + " Guesses Left")

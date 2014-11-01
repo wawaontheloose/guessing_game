@@ -26,6 +26,12 @@
 	background: url('../img/nuggetbox.jpg') no-repeat;
 }
 
+.correct {
+	width: 456px;
+	height: 375px;
+	background: url('../img/correctbox.jpg') no-repeat;
+}
+
 .jumbotron {
 	padding: 150px 0 140px 0;
 	margin-bottom: 30px;
@@ -36,3 +42,7 @@
 	padding: 40px;
 }
 
+.jumbotron { 
+	padding-top: 110px;
+	max-height: 525px; 
+}
